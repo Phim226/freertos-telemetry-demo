@@ -1,0 +1,17 @@
+.sconsign.dblite
+build/
+src/FreeRTOS
+src/FreeRTOS-Plus
+
+.vscode
+
+Trace_Recorder_Configuration
+CMakeLists.txt
+code_coverage_additions.c
+console.*
+FreeRTOS*
+
+main.c
+main_full.c
+Makefile
+run-time-stats-utils.c
