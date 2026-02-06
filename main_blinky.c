@@ -108,7 +108,6 @@
  * queue send software timer respectively. */
 #define mainVALUE_SENT_FROM_TASK           ( 100UL )
 #define mainVALUE_SENT_FROM_TIMER          ( 200UL )
-#define mainVALUE_SENT_FROM_TELEMETRY_TASK        ( 300UL )
 
 /*-----------------------------------------------------------*/
 
@@ -298,10 +297,6 @@ static void prvQueueReceiveTask( void * pvParameters )
         else if( ulReceivedValue == mainVALUE_SENT_FROM_TIMER )
         {
             console_print( "Message received from software timer\n" );
-        }
-        else if ( ulReceivedValue == mainVALUE_SENT_FROM_TELEMETRY_TASK )
-        {
-            console_print( "Message received from telemetry task");
         }
         else
         {
